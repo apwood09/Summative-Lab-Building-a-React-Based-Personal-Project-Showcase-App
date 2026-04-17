@@ -1,38 +1,176 @@
-.App {
+
+:root {
+  --midnight: #1a0633;
+  --witch-purple: #4a148c;
+  --arcane-gold: #d4af37;
+  --parchment: #f5e6d3;
+  --ghost-white: rgba(255, 255, 255, 0.05);
+  --shadow-magic: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+body {
+  margin: 0;
+  background-color: var(--midnight);
+  color: var(--parchment);
+  font-family: 'Inter', sans-serif;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(74, 20, 140, 0.2) 0%, transparent 80%);
+  min-height: 100vh;
+}
+
+/* Typography with Fantasy Spacing */
+h1, h2, h3 {
+  font-family: 'Crimson Text', serif;
+  color: var(--arcane-gold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.4rem; /* Wide letter spacing for mystical titles */
+  word-spacing: 0.8rem;   /* Space between words in titles */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* App Container */
+.App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+/* Navbar Styling - Centered & Airy */
+.navbar {
+  background: rgba(26, 6, 51, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--arcane-gold);
+  padding: 1.5rem 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container {
+  display: flex;
+  gap: 3.5rem; /* Large gaps for clarity */
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a {
+  color: var(--parchment);
+  text-decoration: none;
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.2rem; /* Airy letters */
+  word-spacing: 0.4rem;   /* Airy words */
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--arcane-gold);
+  text-shadow: 0 0 10px var(--arcane-gold);
+}
+
+/* Main Content Area */
+.App-content {
+  flex: 1;
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Mystical Inventory Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Mystical Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--arcane-gold);
+  box-shadow: var(--shadow-magic);
+}
+
+.card h3 {
+  letter-spacing: 0.15rem;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Form & Input (The Admin Grimoire) */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  border-radius: 15px;
+  border: 1px solid var(--witch-purple);
+}
+
+label {
+  font-family: 'Crimson Text', serif;
+  color: var(--arcane-gold);
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+input, textarea {
+  background: rgba(26, 6, 51, 0.6);
+  border: 1px solid var(--witch-purple);
+  color: var(--parchment);
+  padding: 14px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--arcane-gold);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  background: rgba(26, 6, 51, 0.8);
+}
+
+/* Buttons (Orbs of Action) */
+button {
+  background: var(--witch-purple);
+  color: var(--parchment);
+  border: 1px solid var(--arcane-gold);
+  padding: 12px 25px;
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: var(--arcane-gold);
+  color: var(--midnight);
+  box-shadow: 0 0 15px var(--arcane-gold);
 }
