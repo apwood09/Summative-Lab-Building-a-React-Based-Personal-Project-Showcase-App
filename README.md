@@ -1,4 +1,4 @@
- Stitch Witchery: Magical Yarn Administrative Portal
+ # 🧶 Stitch Witchery: Magical Yarn Administrative Portal
 Welcome to the Stitch Witchery Admin Portal, a specialized inventory management system designed for purveyors of fine, mystical fibers. This project was developed as a React-based showcase for the Summative Lab, focusing on state management, client-side routing, and a "Mystical Fantasy" aesthetic.
 
 ✨ Features
