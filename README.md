@@ -14,6 +14,7 @@ State: React Context API.
 Backend (Mock): JSON Server to simulate a RESTful API.
 Testing: Vitest & React Testing Library.
 Styling: Custom CSS with a focus on "Arcane" aesthetics (Midnight Purple, Gold accents, and Parchment typography).
+<br>
 🚀 Setup & Installation
 1. Clone/Fork the Repository
 To Fork: Click the Fork button -> Create new fork -> Name your fork and click Create.
