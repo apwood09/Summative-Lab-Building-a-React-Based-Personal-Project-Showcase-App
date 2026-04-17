@@ -9,21 +9,26 @@ export const InventoryPage = () => {
     const filteredYarns = yarns.filter(y => 
         y.name?.toLowerCase().includes(search.toLowerCase()) ||
         y.color?.toLowerCase().includes(search.toLowerCase())
-    ); 
+    );
 
-    if (loading) return <p>Loading Spells...</p>;
+    if (loading) return <p className="loading-text">Loading Spells...</p>;
 
     return (
-    <div>
-      <input 
-        style={{ width: '100%', padding: '10px', marginBottom: '20px' }}
-        placeholder="Search by name or color..." 
-        value={search} 
-        onChange={(e) => setSearch(e.target.value)} 
-      />
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-        {filteredYarns.map(y => <YarnCard key={y.id} yarn={y} />)}
-      </div>
-    </div>
-  );
+        <div className="inventory-container">
+            <h1>Yarn Archive</h1>
+            <input 
+                className="search-bar"
+                placeholder="Search by name or color..." 
+                value={search} 
+                onChange={(e) => setSearch(e.target.value)} 
+            />
+            <div className="grid">
+                {filteredYarns.length > 0 ? (
+                    filteredYarns.map(y => <YarnCard key={y.id} yarn={y} />)
+                ) : (
+                    <p>No magical fibers found matching your search.</p>
+                )}
+            </div>
+        </div>
+    );
 };
