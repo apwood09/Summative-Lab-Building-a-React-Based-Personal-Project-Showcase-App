@@ -1,0 +1,76 @@
+{
+  "store_info": [
+    {
+      "id": "admin-1",
+      "name": "Stitch Witchery",
+      "description": "Premium ethical fibers for modern makers.",
+      "phone_number": "800-KNOT-NOW"
+    }
+  ],
+  "yarns": [
+    {
+      "id": "1",
+      "name": "Forbidden Spell",
+      "weight": "Light",
+      "color": "Dark Violet",
+      "price": 22.45,
+      "description": "100% Organic Merino wool, perfect for cozy sweaters."
+    },
+    {
+      "id": "2",
+      "name": "Poison Garden",
+      "weight": "Medium",
+      "color": "Green/Lavender",
+      "price": 18.50,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    },
+    {
+      "id": "3",
+      "name": "Poisoned Apple",
+      "weight": "Bulky",
+      "color": "Deep Red",
+      "price": 26.25,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    },
+    {
+      "id": "4",
+      "name": "Cursed Castle",
+      "weight": "Light",
+      "color": "Stone Grey/Black",
+      "price": 12.45,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    },
+    {
+      "id": "5",
+      "name": "Raven",
+      "weight": "Light",
+      "color": "Black/Grey Iridescent",
+      "price": 20.55,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    },
+    {
+      "id": "6",
+      "name": "Midnight Blue",
+      "weight": "Bulky",
+      "color": "Deep Navy",
+      "price": 21.65,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    },
+    {
+      "id": "7",
+      "name": "Fae's Wish",
+      "weight": "Bulky",
+      "color": "Pastel Yellow",
+      "price": 22.45,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    },
+    {
+      "id": "8",
+      "name": "Dragon Breath",
+      "weight": "Medium",
+      "color": "Orange/Yellow/Red Gradient",
+      "price": 16.50,
+      "description": "Soft Pima cotton blend with a subtle sheen."
+    }
+  ]
+}
