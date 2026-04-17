@@ -19,7 +19,7 @@ Styling: Custom CSS with a focus on "Arcane" aesthetics (Midnight Purple, Gold a
 🚀 Setup & Installation
 ### 1. Clone/Fork the Repository 
 <br>
-To Fork: Click the Fork button -> Create new fork -> Name your fork and click Create.
+To Fork: Click the Fork button -> Create new fork -> Name your fork and click Create. <br>
 To Clone:
 git clone [your-repository-link]
 cd my-yarn-app
