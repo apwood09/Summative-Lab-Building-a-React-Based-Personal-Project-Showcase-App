@@ -17,7 +17,8 @@ Styling: Custom CSS with a focus on "Arcane" aesthetics (Midnight Purple, Gold a
 <br>
 <br>
 🚀 Setup & Installation
-1. Clone/Fork the Repository
+### 1. Clone/Fork the Repository 
+<br>
 To Fork: Click the Fork button -> Create new fork -> Name your fork and click Create.
 To Clone:
 git clone [your-repository-link]
